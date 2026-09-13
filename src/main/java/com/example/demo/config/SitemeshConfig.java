@@ -16,7 +16,7 @@ public class SitemeshConfig {
             @Override
             protected void applyCustomConfiguration(SiteMeshFilterBuilder builder) {
                 // Map layout chuẩn cho admin
-                builder.addDecoratorPath("/admin/*", "/WEB-INF/decorators/admin.jsp")
+                builder.addDecoratorPath("/admin/*", "/admin.jsp")
                         .addExcludedPath("/login*")
                         .addExcludedPath("/logout*")
                         .addExcludedPath("/css/*")

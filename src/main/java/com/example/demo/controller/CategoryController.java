@@ -37,7 +37,7 @@ public class CategoryController {
     @GetMapping("/create")
     public String showCreateForm(Model model) {
         model.addAttribute("category", new Category());
-        return "admin/category/form";
+        return "admin/category/form"; // Khớp với đường dẫn file form.jsp
     }
 
     @GetMapping("/edit/{id}")
